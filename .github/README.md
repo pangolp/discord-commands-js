@@ -11,12 +11,8 @@ Los comandos, son añadidos dentro de la carpeta `commands`.
 ```
 discord-commands-js/
 `-- commands
-|   `-- ayuda.js
+|   `-- avatar.js
 |   `-- bienvenido.js
-|   `-- info.js
-|   `-- kiss.js
-|   `-- love.js
-|   `-- punch.js
 `-- config.json
 `-- index.js
 `-- package-lock.json
@@ -32,6 +28,14 @@ discord-commands-js/
 
 ```json
 {
-    "token": "",        // token de tu bot aqui
+    "token": "",        // el token de tu bot, aqui.
+    "channelId": ""     // el canal donde queres que se muestre el mensaje de bienvenida.
 }
 ```
+
+## Commandos disponibles
+
+- `!avatar`: muestra el avatar de un usuario o el del propio usuario que ejecuta el bot.
+- `!bienvenido`: responde, "Buenos dias"
+
+Tambien añadimos la funcion de saludar cuando alguien entra al discord, y configurar un boton para que las personas puedan interactuar.
